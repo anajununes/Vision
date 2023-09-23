@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision - Financeiro</title>
+    <link rel="stylesheet" href="pg2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="imagens/solar-panel.png" type="imag/x-icon">
+    <link rel="shortcut icon" href="imagens/solar-panel.png" type="image/x-icon">
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="sidebar close">
+            <header>
+                <div>
+                    <br>
+                    <br>
+                </div>
+                <i class="bx bx-chevron-right toggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                        <i class="bx bx-search icon"></i>
+                        <input type="search" placeholder="Pesquisar...">
+                    </li>
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="Index.html">
+                                <i class="bx bx-home icon"></i>
+                                <span class="text nav-text">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-phone icon"></i>
+                                <span class="text nav-text">Contato</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-book-content icon"></i>
+                                <span class="text nav-text">Agenda</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="pg2.html">
+                                <i class="bx bx-briefcase icon"></i>
+                                <span class="text nav-text">Fornecedores</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#"">
+                            <i class=" bx bx-bar-chart icon"></i>
+                                <span class="text nav-text">Financeiro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="log-out">
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-log-out icon"></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div style="margin-top: 2%;">
+        <div class="content">
+            <div class="accordion" id="accordionExample">
+                <h1 class="subtitulo">Fornecedores</h1>
+                    <a data-bs-toggle="modal" data-bs-target="#cadastrado">
+                        <button class="btn" button>Cadastrar</button>
+                    </a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Clush
+                        </button>
+                    </h2>
+                    <div id="collapseOne">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <label class="form-label">Nome</label>
+                                <input class="form-control" value="Clush" readonly>
+                                <label class="form-label">CNPJ</label>
+                                <input class="form-control" value="41.306.779/0001-55" readonly>
+                                <label for="exampleFormControlTextarea1" class="form-label">Endereço</label>
+                                <input class="form-control" value="Av Brasil, 15 - Centro" readonly>
+                                <label for="exampleFormControlTextarea1" class="form-label">Itens</label>
+                                <textarea class="form-control" id="itens" readonly>Ray-Ban - Aviador</textarea>
+                                <label class="form-label">Condições de pagamento</label>
+                                <input class="form-control" value="Boleto, vencimento 30/10/2023" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Fornecedor 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <label class="form-label">Nome</label>
+                                <input class="form-control" value="Clush" readonly>
+                                <label class="form-label">CNPJ</label>
+                                <input class="form-control" value="41.306.779/0001-55" readonly>
+                                <label for="exampleFormControlTextarea1" class="form-label">Endereço</label>
+                                <input class="form-control" value="Av Brasil, 15 - Centro" readonly>
+                                <label for="exampleFormControlTextarea1" class="form-label">Itens</label>
+                                <textarea class="form-control" id="itens" readonly>Ray-Ban - Aviador</textarea>
+                                <label class="form-label">Condições de pagamento</label>
+                                <input class="form-control" value="Boleto, vencimento 30/10/2023" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 5%;" class="modal fade" id="cadastrado" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastrar Fornecedor</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Razão Social:</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                        <label for="exampleFormControlTextarea1" class="form-label">CNPJ:</label>
+                        <textarea class="form-control"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label">Endereço:</label>
+                        <textarea class="form-control"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label">Itens:</label>
+                        <textarea class="form-control" id="itens"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label">Condição de pagamento:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button data-bs-toggle="modal" data-bs-target="Sucesso" type="button"
+                            class="btn btn-black">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 15%;" class="modal fade" id="Sucesso" tabindex="-1" aria-labelledby="cadastroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Cadastro completado com sucesso!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="pg2.js"></script>
+
+
+</body>
+
+</html>
