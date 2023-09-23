@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISION</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="fundo">
+    <script type="text/javascript" src="script.js"></script>
+
+    <div>
+        <header class="CAB1">
+            <p class="cab1">FRETE GRÁTIS A PARTIR DE R$400,00</p>
+        </header>
+    </div>
+
+
+    <div>
+        <header class="CAB2">
+            <p class="tags"><a href="construcao.html">FEMININO</a></p>
+            <p class="tags"><a href="construcao.html">MASCULINO</a></p>
+            <p class="tags"><a href="construcao.html">INFANTIL</a></p>
+            <p class="tags"><a href="construcao.html">LENTES</a></p>
+            <p class="cab2">VISION</p>
+            <a data-bs-toggle="modal" data-bs-target="#cadastrado">
+                <img class="fav" src="images/fav.png">
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#cadastrado">
+                <img class="bag" src="images/bag.png">
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img class="login" src="images/login.png">
+            </a>
+        </header>
+    </div>
+
+    <br>
+
+    <!-- Modal Login-->
+    <div style="padding-top: 5%;" class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Mantenha-se conectado</label>
+                        </div>
+                        <a href="Site-Adm/Index.html" class="btn btn-black">Entrar</a>
+                        <br>
+                        <br>
+                        <p data-bs-toggle="modal" data-bs-target="#cadastroModal"><u>Novo na Vision? Cadastre-se</u></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 5%;" class="modal fade" id="cadastroModal" tabindex="-1"
+        aria-labelledby="cadastroModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cadastroModalLabel">Cadastre-se</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nome completo</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+                <div style="padding-left: 1%;">
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Concordo com os Termos & Condições, Politíca
+                            de Cookies e Privacidade</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Concordo em receber novidades e benefícios
+                            via e-mail.</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-toggle="modal" data-bs-target="#Sucesso" type="button"
+                        class="btn btn-black">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 15%;" class="modal fade" id="Sucesso" tabindex="-1" aria-labelledby="cadastroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Bem-vindo!</h1>
+                    <br>
+                    <p>Verifique seu e-mail para benefícios exclusivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 15%;" class="modal fade" id="cadastrado" tabindex="-1" aria-labelledby="cadastroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Faça o login!</h1>
+                    <br>
+                    <p>Você deve realizar o login para acessar esta página!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 15%;" class="modal fade" id="cadastrado" tabindex="-1" aria-labelledby="cadastroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Faça o login!</h1>
+                    <br>
+                    <p>Você deve realizar o login para acessar esta página!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <p class="top">POR CATEGORIA</p>
+        <div class="row">
+            <div class="col">
+                <ul class="lista">
+                    <li>
+                        <a href="construcao.html">
+                            <img class="img" src="images/woman.jpeg">
+                            <span class="text">FEMININO</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="lista">
+                    <li>
+                        <a href="construcao.html">
+                            <img class="imgm" src="images/man.jpeg">
+                            <span class="text">MASCULINO</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="lista">
+                    <li>
+                        <a href="construcao.html">
+                            <img class="img" src="images/child.jpeg">
+                            <span class="text">INFANTIL</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="lista">
+                    <li>
+                        <a href="construcao.html">
+                            <img class="img" src="images/lens.jpeg">
+                            <span class="text">LENTES</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <p class="top">POR MARCA</p>
+        <div class="botao">
+            <a href="construcao.html" class="bottext" style="color: #606060;">ARMANI</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">BURBERRY</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">DIOR</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">HUGO BOSS</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">KATE SPADE</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">KIPLING</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">MOSCHINO</a>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="container text-center">
+        <div class="botao">
+            <a href="construcao.html" class="bottext" style="color: #606060;"></a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">RAYBAN</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">TOMMY</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">VERA WANG</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">VERSACE</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">VOGUE</a>
+            <a href="construcao.html" class="bottext" style="color: #606060;">ZEGNA</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <h1>Trending</h1>
+        <div class="grid">
+            <div class="news">
+                <img src="images/trend1.png" alt="Notícia 1">
+                <h2><a href="https://blog.livo.com.br/oculos-moda/">ÓCULOS DA MODA: acessórios que vão além da correção
+                        ou proteção</a></h2>
+                <p>Além de acessórios de correção visual e proteção, os óculos também estão inseridos no contexto da
+                    moda, estilo pessoal e personalidade.</a>.</p>
+            </div>
+            <div class="news">
+                <img width="91%" src="images/trend2.jpg" alt="Notícia 1">
+                <h2><a href="https://elle.com.br/lookbook/5-tendencias-de-oculos-de-grau-2023">5 TENDÊNCIAS DE ÓCULOS DE
+                        GRAU QUE ESTÃO BOMBANDO EM 2023</a></h2>
+                <p>Não é preciso ter problemas de visão para ficar por dentro das principais tendências de óculos de
+                    grau da temporada.</a>.</p>
+            </div>
+            <div style="padding-top: 11%;" class="news">
+                <img src="images/trend3.jpg" alt="Notícia 1">
+                <h2><a href="https://lenscope.com.br/blog/moda-geracaoz/">MODA GERAÇÃO Z e os óculos que são tendências
+                        entre a GenZ</a></h2>
+                <p>A geração Z tem lançado tendências de moda e acessórios, além de ter seus próprios princípios e
+                    valores para comprar esses itens..</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Informações de Contato</h3>
+                    <p>Instagram: @vision.tm</p>
+                    <p>E-mail: contato@vision.com</p>
+                    <p>Telefone: (45) 99456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="code.html">Página Inicial</a></li>
+                        <li><a href="construcao.html">Produtos</a></li>
+                        <li><a href="construcao.html">Sobre Nós</a></li>
+                        <li><a href="construcao.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
